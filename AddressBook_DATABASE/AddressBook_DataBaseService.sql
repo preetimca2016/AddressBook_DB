@@ -29,3 +29,9 @@ DELETE FROM AddressBookDB WHERE FirstName = 'Komal'
 
 ----------------------------------UC6-Retrieve data-----------------------------
 SELECT * FROM AddressBookDB WHERE City = 'Mumbai' or State = 'Maharastra'
+
+--------------------------------------UC7--sizeofaddressBookByCityorState---------------------------------
+insert into AddressBookDB
+values('Hemant','Sharma','Krishna Temple','Jhasi','UP',3432232,2432798795,'Hemant@gmail.com'),
+('neera','Goinka','RamNagar','Kolkata','WestBangol',741256,2515256284,'Namitha@gmail.com')
+SELECT COUNT (FirstName) from AddressBookDB where City='Mumbai' And State='Maharashtra'
