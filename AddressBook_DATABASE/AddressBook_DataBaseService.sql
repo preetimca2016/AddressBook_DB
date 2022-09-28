@@ -19,10 +19,13 @@ Email varChar(200)
 SELECT * From AddressBookDB
 INSERT INTO AddressBookDB
 VALUES  ('Komal','Yadav','BasaiEnclave','GGN', 'Haryan', 122001, 123124324, 'kOMAL@gmail.com')
-		('Radhika','Gandhi','Shiv colony','Mumbai','Marashtra',5655632,6767987865,'radhika  @gmail.com')
+		('Radhika','Gandhi','Shiv colony','Mumbai','Maharastra',5655632,6767987865,'radhika  @gmail.com')
 		------------------------UC4-Edit Existing contact with their Name----------------------------------
 UPDATE AddressBookDB SET Email = 'Kom@gmail.com' WHERE FirstName = 'Komal'
 UPDATE AddressBookDB SET Email = 'Radhi@gmail.com' WHERE FirstName = 'Radhika'
 
 -------------------UC5-Delete contacts---------------------------
 DELETE FROM AddressBookDB WHERE FirstName = 'Komal'
+
+----------------------------------UC6-Retrieve data-----------------------------
+SELECT * FROM AddressBookDB WHERE City = 'Mumbai' or State = 'Maharastra'
