@@ -17,8 +17,10 @@ Email varChar(200)
 );
 ------------------------------UC-3-Insert /Add new contacts--------------------------------
 SELECT * From AddressBookDB
-INSERT INTO AddressBookDB;
-VALUES  ('Komal','Yadav''Basai Enclave','GGN', 'Haryan', 122001, 123124324, 'kOMAL@gmail.com')
+INSERT INTO AddressBookDB
+VALUES  ('Komal','Yadav','BasaiEnclave','GGN', 'Haryan', 122001, 123124324, 'kOMAL@gmail.com')
 		('Radhika','Gandhi','Shiv colony','Mumbai','Marashtra',5655632,6767987865,'radhika  @gmail.com')
-
+		------------------------UC4-Edit Existing contact with their Name----------------------------------
+UPDATE AddressBookDB SET Email = 'Kom@gmail.com' WHERE FirstName = 'Komal'
+UPDATE AddressBookDB SET Email = 'Radhi@gmail.com' WHERE FirstName = 'Radhika'
 
