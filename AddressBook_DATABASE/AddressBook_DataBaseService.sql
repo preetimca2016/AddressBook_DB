@@ -24,3 +24,5 @@ VALUES  ('Komal','Yadav','BasaiEnclave','GGN', 'Haryan', 122001, 123124324, 'kOM
 UPDATE AddressBookDB SET Email = 'Kom@gmail.com' WHERE FirstName = 'Komal'
 UPDATE AddressBookDB SET Email = 'Radhi@gmail.com' WHERE FirstName = 'Radhika'
 
+-------------------UC5-Delete contacts---------------------------
+DELETE FROM AddressBookDB WHERE FirstName = 'Komal'
